@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Make API Request
+request.rest
+
 # C extensions
 *.so
 

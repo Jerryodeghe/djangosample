@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'posts/styles.css' %}">
+    <title>Posts Application</title>
+</head>
+
+<body>
+    <header class="container center-align">
+        <h1>Blog Post Application 1.0</h1>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+        <br>
+        <a style="display: block;" class="center-align" href="/admin">Admin Login</a>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
